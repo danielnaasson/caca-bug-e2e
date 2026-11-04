@@ -39,8 +39,8 @@ describe('Navegação entre as fases', () => {
     cy.get('#btnEnd').should('have.text', 'Ir para o próximo build');
   });
 
-  // Bug conhecido: ver docs/qa/bugs/BUG-002.md. Trocar para it() quando for corrigido.
-  it.skip('CT-NAV-005: o botão lateral volta a dizer "Encerrar" na fase seguinte (BUG-002)', () => {
+  // Regressão do BUG-002 (docs/qa/bugs/BUG-002.md).
+  it('CT-NAV-005: o botão lateral volta a dizer "Encerrar" na fase seguinte (BUG-002)', () => {
     cy.get('#btnEnd').click();
     cy.contains('button', 'Próximo build').click();
     cy.get('#btnEnd').should('have.text', 'Encerrar ciclo de teste');

@@ -10,17 +10,15 @@ Suíte de testes de ponta a ponta com Cypress para o [Caça-Bug](https://danieln
 
 ## Resultado
 
-**29 casos: 27 passando e 2 marcados como bug conhecido.**
+**29 casos, todos passando.**
 
-A suíte encontrou 3 defeitos reais no jogo:
+A suíte encontrou 3 defeitos reais no jogo. Os 3 foram corrigidos, e os testes continuam na suíte para pegar qualquer regressão:
 
 | Bug | Problema | Severidade | Status |
 |---|---|---|---|
 | [BUG-001](docs/qa/bugs/BUG-001.md) | A tela de abertura não fechava, e o jogo não começava | S1 | ✅ Corrigido |
-| [BUG-002](docs/qa/bugs/BUG-002.md) | O botão lateral promete avançar, mas encerra a fase | S3 | 🔴 Aberto |
-| [BUG-003](docs/qa/bugs/BUG-003.md) | O placar mostra o dobro dos pontos quando a fase termina | S3 | 🔴 Aberto |
-
-Os casos dos bugs abertos estão com `it.skip`, porque a pipeline deve avisar sobre defeitos novos. Quando um bug for corrigido, basta trocar para `it`.
+| [BUG-002](docs/qa/bugs/BUG-002.md) | O botão lateral prometia avançar, mas encerrava a fase | S3 | ✅ Corrigido |
+| [BUG-003](docs/qa/bugs/BUG-003.md) | O placar mostrava o dobro dos pontos quando a fase terminava | S3 | ✅ Corrigido |
 
 ## O que é testado
 

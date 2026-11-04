@@ -60,8 +60,8 @@ describe('Pontuação', () => {
     });
   });
 
-  // Bug conhecido: ver docs/qa/bugs/BUG-003.md. Trocar para it() quando for corrigido.
-  it.skip('CT-PONTOS-010: o placar não dobra quando a fase termina (BUG-003)', () => {
+  // Regressão do BUG-003 (docs/qa/bugs/BUG-003.md).
+  it('CT-PONTOS-010: o placar não dobra quando a fase termina (BUG-003)', () => {
     cy.reportarBug('senha', 'Crítica');
     cy.get('#btnEnd').click();
     cy.pontosDevemSer(150);
