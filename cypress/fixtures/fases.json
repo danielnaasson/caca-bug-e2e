@@ -1,0 +1,60 @@
+[
+  {
+    "nome": "Login do Banco Pinguim",
+    "url": "https://homolog.bancopinguim.test/login",
+    "build": "v3.8.0-rc1",
+    "tempo": 75,
+    "falsoPositivo": "titulo",
+    "bugs": [
+      { "id": "senha", "severidade": "Crítica" },
+      { "id": "err", "severidade": "Média" },
+      { "id": "entrar", "severidade": "Baixa" },
+      { "id": "sessao", "severidade": "Média" }
+    ]
+  },
+  {
+    "nome": "Carrinho da Grão Torrefação",
+    "url": "https://homolog.graotorrefacao.test/carrinho",
+    "build": "v2.14.3",
+    "tempo": 90,
+    "falsoPositivo": "titulo",
+    "bugs": [
+      { "id": "linha1", "severidade": "Alta" },
+      { "id": "qtd2", "severidade": "Alta" },
+      { "id": "frete", "severidade": "Alta" },
+      { "id": "entrega", "severidade": "Média" },
+      { "id": "finalizar", "severidade": "Baixa" }
+    ]
+  },
+  {
+    "nome": "Cadastro da Clínica Aurora",
+    "url": "https://homolog.clinicaaurora.test/recepcao/pacientes/novo",
+    "build": "v1.6.0-beta.2",
+    "tempo": 100,
+    "falsoPositivo": "titulo",
+    "bugs": [
+      { "id": "lista", "severidade": "Crítica" },
+      { "id": "cpf", "severidade": "Alta" },
+      { "id": "saudacao", "severidade": "Média" },
+      { "id": "idade", "severidade": "Média" },
+      { "id": "email", "severidade": "Média" },
+      { "id": "pag", "severidade": "Baixa" }
+    ]
+  },
+  {
+    "nome": "Painel da cozinha Brasa",
+    "url": "https://homolog.brasagrill.test/painel",
+    "build": "v5.0.0-rc3",
+    "tempo": 100,
+    "falsoPositivo": "logo",
+    "bugs": [
+      { "id": "debug", "severidade": "Crítica" },
+      { "id": "botoes", "severidade": "Alta" },
+      { "id": "meta", "severidade": "Média" },
+      { "id": "tempo", "severidade": "Média" },
+      { "id": "notif", "severidade": "Baixa" },
+      { "id": "obs", "severidade": "Baixa" },
+      { "id": "hora", "severidade": "Baixa" }
+    ]
+  }
+]

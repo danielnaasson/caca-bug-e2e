@@ -1,0 +1,24 @@
+name: Testes E2E
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  cypress:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: cypress-io/github-action@v6
+        with:
+          browser: electron
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: prints-das-falhas
+          path: cypress/screenshots

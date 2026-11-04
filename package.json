@@ -1,0 +1,14 @@
+{
+  "name": "caca-bug-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Testes E2E do jogo Caça-Bug com Cypress",
+  "scripts": {
+    "test": "cypress run",
+    "test:open": "cypress open"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "15.21.1"
+  }
+}
